@@ -1,4 +1,4 @@
-//<>// //<>//
+//<>//
 import processing.sound.*;
 
 
@@ -52,6 +52,9 @@ float MCX, MCY, MCW, MCH;
 
 PImage TABLE1;
 float tabx, taby, tabw, tabh;
+
+PImage floor;
+float floorx, floory, floorw, floorh;
 
 
 
@@ -387,6 +390,19 @@ plantx = 397;
 planty = 137;
 plantw = 80;
 planth = 80;
+
+
+
+floor = loadImage("floor.png");
+floorx = 300;
+floory = 300;
+floorw = 500;
+floorh = 380;
+
+
+
+
+
 
 MEWOCAT1 = loadImage("mewoo.png");
 MCX = 125;
