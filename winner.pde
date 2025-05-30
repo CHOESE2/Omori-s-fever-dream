@@ -38,8 +38,11 @@ void winner() {
   background(brown);
   fill(255);
   stroke(brown);
-  rect(50, 150, 500, 330);
-  fill(9, 25, 72);
+  fill(0);
+  
+  image(floor, floorx, floory, floorw, floorh);
+  //rect(50, 150, 500, 330);
+  fill(brown);
   rect(50, 35, 500, 140);
   //-----------INTERIOR
   image(ROBBED, robx, roby, robw, robh); //BED
@@ -196,3 +199,9 @@ if (RION && RON) {
 
   ///----------------------------------------------------------
 }
+
+
+
+
+
+
