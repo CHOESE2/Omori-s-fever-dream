@@ -221,22 +221,48 @@ void object (float x, float y) {
   }
 
 
-  if (BOY.robinx > 210 && BOY.robinx < 290 && BOY.robiny > 325  && BOY.robiny < 395) {
+  if (BOY.robinx > 210 && BOY.robinx < 290 && BOY.robiny > 325  && BOY.robiny < 395 && !MEWOCAT) {
     fill(0);
     textSize(15);
     rect(100, 420, 400, 45);
     fill(255);
     text("ROBIN: hmm..a book..with words..", 120, 450);
   }
+  
+   if (BOY.robinx > 210 && BOY.robinx < 290 && BOY.robiny > 325  && BOY.robiny < 395 && MEWOCAT) {
+    fill(0);
+    textSize(15);
+    rect(100, 420, 400, 45);
+    fill(255, 0, 0);
+    text("ROBIN:   'MEWO's watching' ", 120, 450);
+  }
 
 
-  if (GIRL.roix > 210 &&  GIRL.roix < 290 && GIRL.roiy > 325  && GIRL.roiy < 395) {
+  if (GIRL.roix > 210 &&  GIRL.roix < 290 && GIRL.roiy > 325  && GIRL.roiy < 395 && !MEWOCAT) {
     fill(0);
     textSize(15);
     rect(100, 420, 430, 45);
     fill(255);
     text("ROI: ' how to read for dummies ' ", 120, 450);
   }
+  
+  if (GIRL.roix > 210 &&  GIRL.roix < 290 && GIRL.roiy > 325  && GIRL.roiy < 395 && MEWOCAT) {
+    fill(0);
+    textSize(15);
+    rect(70, 420, 470, 45);
+    fill(255);
+    text("ROI:  ' how to set up a spider funeral ' ", 85, 450);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   
   if (GIRL.roix > 420 &&  GIRL.roix < 510 && GIRL.roiy > 355  && GIRL.roiy < 400 && !MEWOCAT){
      fill(0);
@@ -254,8 +280,8 @@ void object (float x, float y) {
     rect(60, 450, 430, 45);
     rect(60, 420, 430, 40);
     fill(255);
-    text("ROI: the cold egg stares ", 70, 450);
-    text("blankly up at you", 80, 482);
+    text("ROI:    the cold egg stares ", 70, 450);
+    text("    blankly up at you", 80, 482);
   }
   
   if (BOY.robinx > 420 && BOY.robinx < 510 && BOY.robiny > 355  && BOY.robiny < 400 && MEWOCAT){
@@ -279,23 +305,6 @@ void object (float x, float y) {
     text("ROBIN: the warm egg makes you", 70, 450);
     text("feel sleepy  ' time for bed ? '", 80, 480);
   }
-  
-   //if (GIRL.roix > 390 &&  GIRL.roix < 470 && GIRL.roiy > 355  && GIRL.roiy < 400){
-   //    fill(0);
-   // textSize(15);
-   // rect(60, 450, 430, 45);
-   // rect(60, 420, 430, 40);
-   // fill(255);
-   // text("ROI: the cold egg stares ", 70, 450);
-   // text("blankly up at you", 80, 482);
-   //}
-  
-  
-  
-  
-  
-
-
 
 
 
